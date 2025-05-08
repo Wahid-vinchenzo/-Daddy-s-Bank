@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤣Daddy's Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    </style>
+</head>
+<body class="bg-slate-100 min-h-screen flex flex-col items-center p-4 md:p-8 font-mono">
+
+    <div class="w-full max-w-4xl">
+
+        <header class="text-center mb-10 md:mb-16">
+            <h1 class="text-3xl sm:text-4xl font-bold text-blue-800 mb-2">
+                Welcome To Your Secure Banking
+            </h1>
+            <p class="text-md sm:text-lg text-slate-600">
+                Manage your finances with ease.
+            </p>
+        </header>
+
+        
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 md:mb-16">
+            
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h2 class="text-xl font-semibold text-slate-700 mb-2">Deposit</h2>
+                <p class="text-3xl font-bold text-blue-700">$<span id="deposit-total">00</span></p>
+            </div>
+
+            
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h2 class="text-xl font-semibold text-slate-700 mb-2">Withdraw</h2>
+                <p class="text-3xl font-bold text-blue-700">$<span id="withdraw-total">00</span></p>
+            </div>
+
+           
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h2 class="text-xl font-semibold text-slate-700 mb-2">Balance</h2>
+                <p class="text-3xl font-bold text-blue-700">$<span id="balance-total">00</span></p>
+            </div>
+        </section>
+
+        
+        <section class="bg-white p-6 md:p-10 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+            
+            <div class="p-4 md:p-6">
+                <h3 class="text-lg sm:text-xl font-semibold text-slate-800 mb-5 text-center md:text-left">
+                    Deposit Funds
+                </h3>
+                <input
+                    id="deposit-amount"
+                    class="w-full px-4 py-3 mb-4 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-slate-400 text-slate-700"
+                    type="number"
+                    placeholder="Enter deposit amount">
+                <button
+                    id="deposit-button"
+                    class="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-150 ease-in-out">
+                    Deposit
+                </button>
+            </div>
+
+          
+            <div class="p-4 md:p-6">
+                <h3 class="text-lg sm:text-xl font-semibold text-slate-800 mb-5 text-center md:text-left">
+                    Withdraw Funds
+                </h3>
+                <input
+                    id="withdraw-amount"
+                    class="w-full px-4 py-3 mb-4 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-slate-400 text-slate-700"
+                    type="number"
+                    placeholder="Enter withdrawal amount">
+                <button
+                    id="withdraw-button"
+                    class="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-150 ease-in-out">
+                    Withdraw
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="banking.js" defer></script>
+</body>
+</html>
